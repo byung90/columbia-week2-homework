@@ -1,0 +1,239 @@
+/* ------------Reset & General--------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: 'Roboto';
+}
+
+h1{
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* ------------------------------------------ */
+
+/* ------------Main Header--------------- */
+body header {
+  background-color: #002349;
+  display: flex;
+  height: 100px;
+  align-items: center;
+}
+
+header h1 {
+  padding: 10px;
+  width: 20%;
+  color: white;
+}
+
+header nav{
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+}
+
+header nav a {
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+header nav a:link, header nav a:visited,  header nav a:hover, header nav a:active {
+  color: white;
+} 
+
+/* ------------------------------------------ */
+
+/* ------------Main Section--------------- */
+
+main{
+  width: 60%;
+  margin: 0 auto;
+}
+
+main section {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+main section header {
+  background-color: white;
+  width: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+main header h2 {
+  padding-right: 15px;
+}
+
+main section .content {
+  padding: 0 10px;
+  width: 90%;
+  border-left: 5px solid #c29b40;
+}
+/* ------------------------------------------ */
+
+
+/* ------------About Me--------------- */
+
+#about-me .profile-image {
+  float: left;
+  width: 300px;
+  border-radius: 180px;
+  margin-right: 5px;
+}
+
+/* ------------------------------------------ */
+
+
+/* ------------Work--------------- */
+.main-work-container{
+  display: flex;
+}
+
+.main-work {
+  width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.other-work-container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.other-work{
+  width: 49.5%;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.work-border {
+  border: 3px solid #748794;
+}
+
+.main-work img, .other-work img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.work-title {
+  background-color: #f1f1f1;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 10px;
+}
+
+#work nav a:link, #work a:visited,  #work a:hover, #work a:active {
+  color: #002349;
+} 
+
+/* ------------------------------------------ */
+
+/* ------------Footer --------------- */
+
+footer{
+  height: 30px;
+  width: 100%;
+}
+
+/* ------------------------------------------ */
+
+
+
+/* ------------Responsive Media Query--------------- */
+
+/* --- Medium Devices ex: tablets --- */
+@media screen and (max-width: 992px){
+  /* ------------Reset & General--------------- */
+  h1{
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
+
+  /* ------------Main Header--------------- */
+  header h1 {
+    width: 30%;
+  }
+
+  header nav{
+    width: 70%;
+  }
+
+  /* ------------Main Section--------------- */
+  main{
+    width: 90%;
+  }
+
+  main section header {
+    width: 15%;
+  }
+
+  main section .content {
+    width: 85%;
+  }
+
+  /* ------------About Me--------------- */
+  #about-me .profile-image {
+    width: 150px;
+  }
+}
+
+/* --- Smaller Devices ex: phones ---  */
+@media screen and (max-width: 768px) {
+  /* ------------Main Section--------------- */
+  main{
+    width: 95%;
+  }
+
+  /* ------------About Me--------------- */
+  #about-me .profile-image {
+    display: none;
+  }
+
+  /* ------------Work--------------- */
+  .other-work{
+    width: 100%;
+  }
+}
