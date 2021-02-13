@@ -154,7 +154,7 @@ main section .content {
   padding: 10px;
 }
 
-#work nav a:link, #work a:visited,  #work a:hover, #work a:active {
+#work a:link, #work a:visited,  #work a:hover, #work a:active {
   color: #002349;
 } 
 
